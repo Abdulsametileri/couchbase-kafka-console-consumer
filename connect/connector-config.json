@@ -1,0 +1,13 @@
+{
+    "connector.class": "com.couchbase.connect.kafka.CouchbaseSourceConnector",
+    "tasks.max": "10",
+    "couchbase.topic": "user_created",
+    "couchbase.seed.nodes": "couchbase",
+    "couchbase.bootstrap.timeout": "1m",
+    "couchbase.bucket": "users",
+    "couchbase.username": "Administrator",
+    "couchbase.password": "123456",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "couchbase.source.handler": "com.couchbase.connect.kafka.handler.source.RawJsonSourceHandler"
+  }
